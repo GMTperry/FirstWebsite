@@ -1,0 +1,230 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+/* '*' (also called the wild card in css) selects every element on the page */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* code below makes the content fill in the page's corners, leaving no space */
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+}
+@media screen and (min-width: 1100px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+    }
+}
+img {
+    max-width: 100%;
+}
+body > h2 {
+    margin-left: 73px;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: Left;
+    font-family: Helvetica Neue;
+}
+.card-container {
+    margin: 0 65px;
+}
+/* default size below */
+.logo {
+    width: 100%;
+    max-width: 200px;
+    /* auto is a good way to center things, the first value is vertical and second is horizontal*/
+    /* top right bottom left (if four values) */
+    margin: 20px auto;
+}
+@media screen and (min-width: 1100px) {
+    .logo {
+        flex:0 0 auto;
+        width: 200px; 
+        margin: 0;
+    }
+}
+.card {
+    width: 100%;
+    border: 1px solid #8C8C8C;
+    flex: 0 1 auto;
+    opacity: 1;
+}
+/* moves logo to the left instead of leaving it at the top */
+header nav ul {
+    list-style: none;
+    /* code below sets items in the container to flex or grid */
+    display: flex;
+    /* display: grid; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 750px){
+    header nav ul {
+        flex-direction: row;
+    }
+}
+header nav ul li {
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+@media screen and (min-width: 750px){
+    header nav ul li {
+        margin-bottom: 0;
+        margin-right: 35px;
+    }
+}
+.nav-item {
+    color: #18206F;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: Helvetica Neue bold;
+}
+/* line below '>' is used to only assign those properties to ul that 
+comes after '.flexbox-container' */
+.card-container ul {
+    margin-left: -32px;
+    list-style: none;
+    /* code below sets items in the container to flex or grid */
+    display: flex;
+    /* display: grid; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.card-container ul li {
+    padding-right: 32px;
+    padding-bottom: 32px;
+}
+/* When the browser is at least 750px and above */
+@media screen and (min-width: 750px) {
+    .card-container ul li {
+        /* research below */
+        flex: 0 1 auto;
+        width: 50%;
+    }
+}
+/* When the browser is at least 1200px and above */
+@media screen and (min-width: 1100px) {
+    .card-container ul li {
+        /* research below */
+        width: 33.3%;
+    }
+}
+h2 {
+    font-family: Helvetica Neue;
+    text-align: center;
+}
+.card_text {
+    text-align: left;
+    font-family: Helvetica Neue;
+    background-color: white;
+    padding: 20px;
+}
+.card_text h3 {
+    font-size: 23px;
+    line-height: 40px;
+    margin: 0;
+}
+.card_text p {
+    font-size: 16px; 
+    line-height: 24px;
+}
+a {
+    color: #0055CC;
+    font-size: 16px; 
+    line-height: 24px;
+}
+/* code below centers the text in the containers (i should
+   probably put this in flexbox container) */
+div {
+    text-align: center;
+}
+footer {
+    width: 100%;
+    background-color: #17255A;
+    /* it doesn't have a shadow (box-shadow: 0px 3px 6px #00000029;) */
+    border: 1px solid #979797;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 1100px) {
+    footer {
+        flex-direction: row;
+        align-items: center;
+        padding: 25px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .footer-left-column {
+        flex: 0 1 auto;
+        width: 75%;
+    }
+}
+.footer-main-nav ul {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 1100px) {
+    .footer-main-nav ul {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .footer-right-column {
+        flex: 0 1 auto;
+        width: 25%;
+    }
+}
+.footer-copyright {
+    flex: 0 1 auto;
+    width: 100%;
+}
+.social-links {
+    list-style: none;
+    /* code below sets items in the container to flex or grid */
+    display: flex;
+    /* display: grid; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+@media screen and (min-width: 750px) {
+    .social-links {
+        flex-direction: row;
+    }
+}
+.social-links ul {
+    list-style: none;
+}
+.social-links ul li a {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+}
+.social-links ul li a .fa-brands {
+    color: #BD1E1E;
+    font-size: 18px;
+}
