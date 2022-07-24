@@ -2,61 +2,76 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title>"First Project | Building With Flexbox"</title>
+        <title>"Boutique Petite | By Perry Dongmo"</title>
         <meta name="author" content="Perry Dongmo">
-        <meta name="description" content="A website using flexbox">
-        <meta name="keywords" content="html, css, javascript, basics, website, flexbox">
-        <meta http-equiv="refresh" content="30">
-        <link rel="stylesheet" href="style2_perry's.css">
+        <meta name="description" content="Boutique Petite, an online thriftshop.">
+        <meta name="keywords" content="html, css, javascript, basics, website, flexbox, thriftshop">
+        <!--<meta http-equiv="refresh" content="30"> -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Unicons CSS -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <script src="https://kit.fontawesome.com/1959500212.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="https://via.placeholder.com/400x150.png?text=Logo"/> 
+            <div class="header-left-column">
+                <div class="logo">
+                    <img src="img/Website logo.jpg" alt="Website Logo"/> 
+                </div>
+                <nav class="header-main-nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="nav-item">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-item">
+                                Shop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-item">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-item">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-item">
+                                Contact
+                            </a>
+                        </li>
+                    </ul> 
+                </nav>
             </div>
-            <nav>
-               <ul>
-                    <li>
-                        <a href="#" class="nav-item">
-                            PrimaryNav1
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-item">
-                            PrimaryNav2
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-item">
-                            PrimaryNav3
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-item">
-                            PrimaryNav4
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-item">
-                            PrimaryNav5
-                        </a>
-                    </li>
-               </ul> 
-            </nav>
+            <div class="header-right-column">
+                <!--below is website search code-->
+                <div class="input-box">
+                    <input type="text" placeholder="Search Catalog">
+                    <span class="icon">
+                        <i class="uil uil-search search-icon"></i>
+                    </span>
+                    <i class="uil uil-times close-icon"></i>
+                </div>
+            </div>
         </header>
-        <h2>Cards With Images</h2>
-        <div class="card-container">
+
+        <h1 class="page-title">Catalog</h1>
+
+        <div class="catalog-container">
             <ul>
                 <li>
                     <div class="card">
-                        <img class="flexbox_image" src="https://via.placeholder.com/828x552.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide"/>
+                        <img class="flexbox_image" src="img/Hydraulic Jeans.jpg"/>
                         <div class="card_text">
-                           <h3>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</h3>
-                           <p>Random text for a random reason on a random day in a random year for a random person.</p>
-                           <p>
-                                <a href="noLink">This is a link</a>
-                            </p>
+                           <h2 class="page-card-title">Product Name</h2>
+                           <p>Product Description</p>
+                           <a href="#">This is a link</a>
                         </div>
                      </div>
                 </li>
@@ -64,11 +79,9 @@
                     <div class="card">
                         <img class="flexbox_image" src="https://via.placeholder.com/828x552.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide"/>
                         <div class="card_text">
-                           <h3>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</h3>
-                           <p>Random text for a random reason on a random day in a random year for a random person.</p>
-                           <p>
-                                <a href="index.html">This is a link</a>
-                            </p>
+                           <h2 class="page-card-title">Product Name</h2>
+                           <p>Product Description</p>
+                           <a href="#">This is a link</a>
                         </div>
                      </div>
                 </li>
@@ -76,11 +89,9 @@
                     <div class="card">
                         <img class="flexbox_image" src="https://via.placeholder.com/828x552.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide"/>
                         <div class="card_text">
-                           <h3>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</h3>
-                           <p>Random text for a random reason on a random day in a random year for a random person.</p>
-                           <p>
-                                <a href="noLink">This is a link</a>
-                            </p>
+                           <h2 class="page-card-title">Product Name</h2>
+                           <p>Product Description</p>
+                           <a href="#">This is a link</a>
                         </div>
                      </div>
                 </li>
@@ -88,11 +99,9 @@
                     <div class="card">
                         <img class="flexbox_image" src="https://via.placeholder.com/828x552.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide"/>
                         <div class="card_text">
-                           <h3>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</h3>
-                           <p>Random text for a random reason on a random day in a random year for a random person.</p>
-                           <p>
-                                <a href="noLink">This is a link</a>
-                            </p>
+                           <h2 class="page-card-title">Product Name</h2>
+                           <p>Product Description</p>
+                           <a href="#">This is a link</a>
                         </div>
                      </div>
                 </li>
@@ -100,11 +109,9 @@
                     <div class="card">
                         <img class="flexbox_image" src="https://via.placeholder.com/828x552.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide"/>
                         <div class="card_text">
-                           <h3>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</h3>
-                           <p>Random text for a random reason on a random day in a random year for a random person.</p>
-                           <p>
-                                <a href="noLink">This is a link</a>
-                            </p>
+                           <h2 class="page-card-title">Product Name</h2>
+                           <p>Product Description</p>
+                           <a href="#">This is a link</a>
                         </div>
                      </div>
                 </li>
@@ -112,11 +119,9 @@
                     <div class="card">
                         <img class="flexbox_image" src="https://via.placeholder.com/828x552.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide"/>
                         <div class="card_text">
-                           <h3>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</h3>
-                           <p>Random text for a random reason on a random day in a random year for a random person.</p>
-                           <p>
-                                <a href="noLink">This is a link</a>
-                            </p>
+                           <h2 class="page-card-title">Product Name</h2>
+                           <p>Product Description</p>
+                           <a href="#">This is a link</a>
                         </div>
                      </div>
                 </li>
@@ -124,11 +129,9 @@
                     <div class="card">
                         <img class="flexbox_image" src="https://via.placeholder.com/828x552.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide"/>
                         <div class="card_text">
-                           <h3>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</h3>
-                           <p>Random text for a random reason on a random day in a random year for a random person.</p>
-                           <p>
-                                <a href="noLink">This is a link</a>
-                            </p>
+                           <h2 class="page-card-title">Product Name</h2>
+                           <p>Product Description</p>
+                           <a href="#">This is a link</a>
                         </div>
                      </div>
                 </li>
@@ -136,11 +139,9 @@
                     <div class="card">
                         <img class="flexbox_image" src="https://via.placeholder.com/828x552.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide"/>
                         <div class="card_text">
-                           <h3>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</h3>
-                           <p>Random text for a random reason on a random day in a random year for a random person.</p>
-                           <p>
-                                <a href="noLink">This is a link</a>
-                            </p>
+                           <h2 class="page-card-title">Product Name</h2>
+                           <p>Product Description</p>
+                           <a href="#">This is a link</a>
                         </div>
                      </div>
                 </li>
@@ -148,16 +149,20 @@
                     <div class="card">
                         <img class="flexbox_image" src="https://via.placeholder.com/828x552.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide"/>
                         <div class="card_text">
-                           <h3>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</h3>
-                           <p>Random text for a random reason on a random day in a random year for a random person.</p>
+                           <h2 class="page-card-title">Product Name</h2>
+                           <p>Product Description</p>
                            <p>
-                                <a href="noLink">This is a link</a>
+                                <a href="#">This is a link</a>
                            </p>
                         </div>
                      </div>
                 </li>
             </ul>
-        </div>   
+        </div> 
+        <div class="buttons-wrap">
+            <a class="button" href="#"><span>Button 1</span></a>
+            <a class="button" href="#"><span>another button</span></a>
+        </div>  
         <footer>
             <div class="footer-left-column">
                 <nav class="footer-main-nav">
@@ -177,14 +182,14 @@
                     </ul>
                 </nav>
                 <div class="footer-contact-info">
-                    <p>12345 Street Address</p>
-                    <p>City, State 12345</p>
-                    <p>(XXX) XXX-XXXX</p>
+                    <p class="footer-contact-info-text">5807 Eurith Avenue</p>
+                    <p class="footer-contact-info-text">Baltimore, Maryland 21206</p>
+                    <p class="footer-contact-info-text">(443) 791-3252</p>
                 </div>
             </div>
             <div class="footer-right-column">
                 <div class="logo">
-                    <img src="https://via.placeholder.com/400x150.png?text=Logo"/>
+                    <img src="img/Website logo.jpg" alt="Website Logo"/>
                 </div>
                 <div class="social-links">
                     <ul>
@@ -209,7 +214,7 @@
                     </ul>
                     <ul>
                         <li>
-                            <a href="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/gilles-dongmo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div> 
@@ -219,6 +224,14 @@
                 <a href="#">Legal Link 1</a>
                 <a href="#">Legal Link 2</a>
             </div>
-        </footer> 
+        </footer>
+        <script>
+            let inputBox = document.querySelector(".input-box"),
+                searchIcon = document.querySelector(".icon"),
+                closeIcon = document.querySelector(".close-icon");
+
+            searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
+            closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
+        </script> 
     </body>
 </html>
